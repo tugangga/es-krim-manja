@@ -1,0 +1,64 @@
+:root {
+  --logo: #f89bae;
+  --primary: #4b1721;
+  --bg: #f7e5e2;
+}
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  color: var(--primary);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.navbar-brand span {
+  color: var(--logo);
+}
+
+.hero {
+  background-image: url("../images/simon-lee-4wYxcWA5MbI-unsplash.jpg");
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0px;
+  background: linear-gradient(0deg, rgba(248, 215, 218, 1) 6%, rgb(255, 255, 255, 0.01) 40%);
+}
+
+.hero h1 {
+  /* font-weight: 600; */
+  text-shadow: 1px 1px 3px rgba(234, 234, 234, 0.5);
+  font-size: 5em;
+}
+
+.hero h1 span {
+  color: var(--primary);
+  text-shadow: 1px 1px 3px rgba(165, 142, 142, 0.8);
+}
+
+.menu img {
+  max-width: 270px;
+}
+
+input {
+  height: 4.5rem;
+  background-color: black;
+  color: #fff;
+}
